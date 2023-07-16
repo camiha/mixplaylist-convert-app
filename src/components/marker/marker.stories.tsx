@@ -12,8 +12,16 @@ export default meta;
 
 type Story = StoryObj<typeof Marker>;
 
-export const Primary: Story = {
+export const Black: Story = {
   args: {
+    variant: "black",
+    children: "Mixplaylist",
+  },
+};
+
+export const Green: Story = {
+  args: {
+    variant: "green",
     children: "Mixplaylist",
   },
 };
