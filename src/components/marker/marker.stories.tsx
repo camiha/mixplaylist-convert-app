@@ -3,7 +3,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Marker } from "./marker";
 
 const meta: Meta<typeof Marker> = {
-  title: "Components / Typegraphy / Marker",
+  title: "Components / Typography / Marker",
   component: Marker,
   tags: ["autodocs"],
 };

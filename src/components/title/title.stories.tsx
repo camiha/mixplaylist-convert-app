@@ -5,7 +5,7 @@ import { Marker } from "../marker";
 import { Title } from "./title";
 
 const meta: Meta<typeof Title> = {
-  title: "Components / Typegraphy / Title",
+  title: "Components / Typography / Title",
   component: Title,
   tags: ["autodocs"],
 };

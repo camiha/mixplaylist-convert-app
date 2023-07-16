@@ -36,6 +36,7 @@ export const {{ pascal(inputs.name) }} = ({ children }: {{ pascal(inputs.name) }
 
 ```tsx
 import { Meta, StoryObj } from "@storybook/react";
+
 import { {{ pascal(inputs.name) }} } from "./{{ inputs.name }}";
 
 const meta: Meta<typeof {{ pascal(inputs.name) }}> = {
