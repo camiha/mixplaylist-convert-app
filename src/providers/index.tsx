@@ -9,6 +9,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { queryClient } from "@/lib/react-query";
 import dynamic from "next/dynamic";
 import { ErrorBoundary } from "react-error-boundary";
+import { theme } from "@/config/theme";
 
 const MSWWrapper = dynamic<MSWWrapperProps>(() =>
   import("@/lib/msw").then(({ MSWWrapper }) => MSWWrapper),
@@ -17,7 +18,7 @@ const MSWWrapper = dynamic<MSWWrapperProps>(() =>
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <CacheProvider>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <ErrorBoundary
           fallback={<div>Something went wrong!</div>}
           onError={console.error}
