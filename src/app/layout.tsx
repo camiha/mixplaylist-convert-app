@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Providers } from "@/providers";
+
 import { fonts } from "@/config/fonts";
+import { Providers } from "@/providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",

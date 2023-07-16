@@ -1,5 +1,6 @@
+import { ReactNode } from "react";
+
 import { Button as ChakraButton } from "@chakra-ui/react";
-import { MouseEventHandler, ReactNode } from "react";
 
 export type ButtonProps = {
   children: ReactNode;

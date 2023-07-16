@@ -1,6 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Title } from "./title";
+
 import { Marker } from "../marker";
+
+import { Title } from "./title";
 
 const meta: Meta<typeof Title> = {
   title: "Components / Typegraphy / Title",

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import { Text as ChakraText } from "@chakra-ui/react";
 
 export type MarkerProps = {
@@ -7,10 +8,10 @@ export type MarkerProps = {
 export const Marker = ({ children }: MarkerProps) => {
   return (
     <ChakraText
-      display={"inline-flex"}
+      backgroundColor="black.primary"
+      color="white.primary"
+      display="inline-flex"
       px={2}
-      backgroundColor={"black.primary"}
-      color={"white.primary"}
     >
       {children}
     </ChakraText>

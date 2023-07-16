@@ -1,15 +1,16 @@
 "use client";
 
-import { API_MOCKING, IS_DEVELOPMENT } from "@/config/constants";
-import { MSWWrapperProps } from "@/lib/msw";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { queryClient } from "@/lib/react-query";
 import dynamic from "next/dynamic";
 import { ErrorBoundary } from "react-error-boundary";
+
+import { API_MOCKING, IS_DEVELOPMENT } from "@/config/constants";
 import { theme } from "@/config/theme";
+import { MSWWrapperProps } from "@/lib/msw";
+import { queryClient } from "@/lib/react-query";
 
 const MSWWrapper = dynamic<MSWWrapperProps>(() =>
   import("@/lib/msw").then(({ MSWWrapper }) => MSWWrapper),

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import { Heading as ChakraHeading } from "@chakra-ui/react";
 
 export type TitleProps = {
@@ -8,15 +9,15 @@ export type TitleProps = {
 export const Title = ({ level, children }: TitleProps) => {
   return (
     <ChakraHeading
-      position={"relative"}
-      as={level}
-      display="inline-flex"
       alignItems="flex-start"
+      as={level}
+      color="black.primary"
+      display="inline-flex"
       flexDirection="column"
       fontStyle="italic"
-      gap={2}
       fontWeight="normal"
-      color="black.primary"
+      gap={2}
+      position="relative"
     >
       {children}
     </ChakraHeading>

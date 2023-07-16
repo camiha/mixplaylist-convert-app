@@ -1,5 +1,7 @@
 import { rest } from "msw";
+
 import { API_URL } from "@/config/constants";
+
 import { sampleHandlers } from "./sample";
 
 export const handlers = [

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 import { IS_SERVER } from "@/config/constants";
 
 const initializeMocks = () => {
