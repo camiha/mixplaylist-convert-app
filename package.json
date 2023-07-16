@@ -11,7 +11,8 @@
     "format:check": "pnpm run prettier --check",
     "format:fix": "pnpm run prettier --write",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "new": "scaffdog generate"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.1.4",
@@ -46,6 +47,7 @@
     "msw": "^1.2.2",
     "msw-devtools": "^1.0.2",
     "prettier": "^3.0.0",
+    "scaffdog": "^2.5.1",
     "storybook": "^7.0.27",
     "typescript": "5.1.6",
     "vite": "^4.4.4"
