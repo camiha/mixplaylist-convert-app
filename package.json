@@ -8,12 +8,13 @@
     "start": "next start",
     "lint": "eslint --ext .ts,.tsx ./src",
     "lint:fix": "eslint --ext .ts,.tsx ./src --fix",
-    "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
+    "prettier": "prettier \"./src/**/*.+(json|ts|tsx)\"",
     "format:check": "pnpm run prettier --check",
     "format:fix": "pnpm run prettier --write",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "new": "scaffdog generate"
+    "new": "scaffdog generate",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.1.4",
@@ -51,6 +52,8 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "msw": "^1.2.2",
     "msw-devtools": "^1.0.2",
     "prettier": "^3.0.0",
