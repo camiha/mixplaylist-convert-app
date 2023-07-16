@@ -44,3 +44,34 @@ export const Attention: Story = {
     children: "Button Label=>",
   },
 };
+
+export const PrimaryNofill: Story = {
+  args: {
+    fill: false,
+    children: "Button Label=>",
+  },
+};
+
+export const SecondaryNofill: Story = {
+  args: {
+    fill: false,
+    variant: "secondary",
+    children: "Button Label=>",
+  },
+};
+
+export const WarningNofill: Story = {
+  args: {
+    fill: false,
+    variant: "warning",
+    children: "Button Label=>",
+  },
+};
+
+export const AttentionNofill: Story = {
+  args: {
+    fill: false,
+    variant: "attention",
+    children: "Button Label=>",
+  },
+};

@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import { Button as ChakraButton } from "@chakra-ui/react";
 
+// TODO: add hover color
 const variants = {
   primary: {
     color: "black.primary",
@@ -26,12 +27,14 @@ const variants = {
 };
 export type ButtonProps = {
   children: ReactNode;
+  fill: boolean;
   variant?: keyof typeof variants;
   type?: "button" | "submit" | "reset";
 };
 export const Button = ({
   variant = "primary",
   type = "button",
+  fill = true,
   children,
 }: ButtonProps) => {
   return (
@@ -39,9 +42,9 @@ export const Button = ({
       border="solid"
       borderRadius="none"
       borderWidth={2}
-      font-size="2xl"
+      fontSize="xl"
       fontStyle="italic"
-      width="100%"
+      width={fill ? "100%" : "auto"}
       {...variants[variant]}
       type={type}
     >
