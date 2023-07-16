@@ -1,9 +1,46 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "./button";
 
-export default {
-  title: "Components / Forms / Button",
-} as Meta;
+const meta: Meta<typeof Button> = {
+  title: "Components / Form / Button",
+  component: Button,
+  tags: ["autodocs"],
+  decorators: [
+    (Story) => (
+      <div style={{ backgroundColor: "#ddd", padding: "16px" }}>
+        <Story />
+      </div>
+    ),
+  ],
+};
 
-export const Basic: StoryFn = () => <Button>Button</Button>;
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
+  args: {
+    children: "Button Label=>",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    children: "Button Label=>",
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    variant: "warning",
+    children: "Button Label=>",
+  },
+};
+
+export const Attention: Story = {
+  args: {
+    variant: "attention",
+    children: "Button Label=>",
+  },
+};
