@@ -38,7 +38,12 @@
     "@types/react": "^18.2.15",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "msw": "^1.2.2",
+    "msw-devtools": "^1.0.2",
     "prettier": "^3.0.0",
     "storybook": "^7.0.27"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
