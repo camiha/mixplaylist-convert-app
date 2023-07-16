@@ -14,6 +14,7 @@ export const Title = ({ level, children }: TitleProps) => {
       color="black.primary"
       display="inline-flex"
       flexDirection="column"
+      fontSize="4xl"
       fontStyle="italic"
       fontWeight="normal"
       gap={2}
