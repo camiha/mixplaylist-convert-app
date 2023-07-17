@@ -1,3 +1,3 @@
 module.exports = {
-  "*.{ts,tsx}": ["pnpm run lint", "pnpm run format:check"],
+  "*.{ts,tsx}": ["pnpm run lint:fix", "pnpm run format:fix"],
 };
