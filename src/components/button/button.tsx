@@ -8,21 +8,25 @@ const variants = {
     color: "black.primary",
     borderColor: "black.primary",
     backgroundColor: "transparent",
+    _hover: { bg: "green.light" },
   },
   secondary: {
     color: "white.primary",
     borderColor: "white.primary",
     backgroundColor: "transparent",
+    _hover: { bg: "green.light" },
   },
   warning: {
     color: "red.primary",
     borderColor: "red.primary",
     backgroundColor: "transparent",
+    _hover: { bg: "green.light" },
   },
   attention: {
     color: "black.primary",
     borderColor: "yellow.primary",
     backgroundColor: "yellow.primary",
+    _hover: { bg: "green.light", borderColor: "green.light" },
   },
 };
 export type ButtonProps = {

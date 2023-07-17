@@ -8,10 +8,12 @@ const variants = {
   primary: {
     color: "black.primary",
     fontSize: 4,
+    _hover: { bg: "green.light" },
   },
   secondary: {
     color: "white.primary",
     fontSize: 4,
+    _hover: { bg: "green.light" },
   },
   box: {
     color: "black.primary",
@@ -21,6 +23,7 @@ const variants = {
     fontWeight: "bold",
     px: 1,
     fontSize: 6,
+    _hover: { bg: "green.light" },
   },
 };
 export type LinkProps = {
