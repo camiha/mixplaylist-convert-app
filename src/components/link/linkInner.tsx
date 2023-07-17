@@ -26,15 +26,21 @@ const variants = {
     _hover: { bg: "green.light" },
   },
 };
-export type LinkProps = {
+export type LinkInnerProps = {
   children: ReactNode;
+  href: string;
   nextLink?: typeof NextLink;
   variant: keyof typeof variants;
 };
 
-export const LinkInner = ({ nextLink, children, variant }: LinkProps) => {
+export const LinkInner = ({
+  nextLink,
+  children,
+  variant,
+  href,
+}: LinkInnerProps) => {
   return (
-    <ChakraLink as={nextLink} {...variants[variant]}>
+    <ChakraLink as={nextLink} {...variants[variant]} href={href}>
       {children}
     </ChakraLink>
   );

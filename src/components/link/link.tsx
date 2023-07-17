@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
-
 import NextLink from "next/link";
 
-import { LinkInner } from "./linkInner";
+import { LinkInner, LinkInnerProps } from "./linkInner";
 
-export type LinkProps = {
-  children: ReactNode;
-};
-export const Link = ({ children }: LinkProps) => {
-  return <LinkInner nextLink={NextLink}>{children}</LinkInner>;
+export type LinkProps = LinkInnerProps;
+export const Link = ({ children, variant, href }: LinkProps) => {
+  return (
+    <LinkInner href={href} nextLink={NextLink} variant={variant}>
+      {children}
+    </LinkInner>
+  );
 };

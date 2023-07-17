@@ -25,6 +25,7 @@ export const Primary: Story = {
   args: {
     variant: "primary",
     children: "Login=>",
+    href: "#",
   },
 };
 
@@ -32,11 +33,13 @@ export const Secondary: Story = {
   args: {
     variant: "secondary",
     children: "Login=>",
+    href: "#",
   },
 };
 export const Box: Story = {
   args: {
     variant: "box",
     children: "Login=>",
+    href: "#",
   },
 };
