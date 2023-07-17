@@ -1,7 +1,5 @@
-import { mergeConfig } from "vite";
-import path from "path";
-
-const config = {
+import type { StorybookConfig } from "@storybook/nextjs";
+const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
@@ -10,23 +8,11 @@ const config = {
     "@chakra-ui/storybook-addon",
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: "@storybook/nextjs",
     options: {},
-  },
-  core: {
-    builder: "@storybook/builder-vite",
   },
   docs: {
     autodocs: "tag",
-  },
-  viteFinal: async (config) => {
-    return mergeConfig(config, {
-      resolve: {
-        alias: {
-          "@": path.resolve(__dirname, "../src"),
-        },
-      },
-    });
   },
 };
 export default config;
