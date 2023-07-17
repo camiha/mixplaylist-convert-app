@@ -19,6 +19,7 @@ export const Title = ({ level, children }: TitleProps) => {
       fontStyle="italic"
       fontWeight="normal"
       gap={2}
+      lineHeight="base"
     >
       {children}
     </ChakraHeading>

@@ -11,8 +11,14 @@ export type HeadingProps = {
 
 export const Heading = ({ level, children }: HeadingProps) => {
   return (
-    <ChakraHeading as={level} fontSize="2xl" fontWeight="normal">
-      <Marker>{children}</Marker>
+    <ChakraHeading
+      as={level}
+      fontFamily="fonts.mono"
+      fontSize="2xl"
+      fontWeight="normal"
+      lineHeight="base"
+    >
+      <Marker variant="green">{children}</Marker>
     </ChakraHeading>
   );
 };
