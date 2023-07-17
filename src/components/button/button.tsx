@@ -31,7 +31,7 @@ const variants = {
 };
 export type ButtonProps = {
   children: ReactNode;
-  fill: boolean;
+  fill?: boolean;
   variant?: keyof typeof variants;
   type?: "button" | "submit" | "reset";
 };
