@@ -35,7 +35,12 @@ export type LinkProps = {
 
 export const Link = ({ children, variant = "primary", href }: LinkProps) => {
   return (
-    <ChakraLink as={NextLink} {...variants[variant]} href={href}>
+    <ChakraLink
+      as={NextLink}
+      {...variants[variant]}
+      fontStyle="italic"
+      href={href}
+    >
       {children}
     </ChakraLink>
   );
