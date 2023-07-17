@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 import { Text as ChakraText } from "@chakra-ui/react";
 
-const valiants = {
+const variants = {
   primary: {
     color: "black.primary",
   },
@@ -12,12 +12,12 @@ const valiants = {
 };
 export type TextProps = {
   children: ReactNode;
-  valiant: keyof typeof valiants;
+  variant: keyof typeof valiants;
 };
 
-export const Text = ({ children, valiant }: TextProps) => {
+export const Text = ({ children, variant }: TextProps) => {
   return (
-    <ChakraText fontSize="sm" {...valiants[valiant]}>
+    <ChakraText fontSize="sm" {...variants[variant]}>
       {children}
     </ChakraText>
   );
