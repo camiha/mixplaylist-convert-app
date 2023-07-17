@@ -22,11 +22,16 @@ const variants = {
 };
 export type MarkerProps = {
   children: ReactNode;
+  px?: number;
   variant?: keyof typeof variants;
 };
-export const Marker = ({ variant = "black", children }: MarkerProps) => {
+export const Marker = ({
+  variant = "black",
+  px = 2,
+  children,
+}: MarkerProps) => {
   return (
-    <ChakraText {...variants[variant]} display="inline-flex" px={2}>
+    <ChakraText {...variants[variant]} display="inline-flex" px={px}>
       {children}
     </ChakraText>
   );
