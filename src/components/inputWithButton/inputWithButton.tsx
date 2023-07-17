@@ -14,7 +14,7 @@ export type InputWithButtonProps = {
 };
 export const InputWithButton = ({ onClick }: InputWithButtonProps) => {
   return (
-    <Box bg="black.primary" padding={2}>
+    <Box bg="black.primary">
       <Flex
         alignItems="center"
         borderBottom="solid"
