@@ -12,7 +12,7 @@ const variants = {
 };
 export type TextProps = {
   children: ReactNode;
-  variant: keyof typeof valiants;
+  variant: keyof typeof variants;
 };
 
 export const Text = ({ children, variant }: TextProps) => {

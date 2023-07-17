@@ -15,13 +15,11 @@ type Story = StoryObj<typeof Text>;
 export const Primary: Story = {
   args: {
     children: "sample text",
-    valiant: "primary",
   },
 };
 
 export const Secondary: Story = {
   args: {
     children: "sample text",
-    valiant: "secondary",
   },
 };
