@@ -30,10 +30,10 @@ export type LinkProps = {
   children: ReactNode;
   href: string;
   nextLink?: typeof NextLink;
-  variant: keyof typeof variants;
+  variant?: keyof typeof variants;
 };
 
-export const Link = ({ children, variant, href }: LinkProps) => {
+export const Link = ({ children, variant = "primary", href }: LinkProps) => {
   return (
     <ChakraLink as={NextLink} {...variants[variant]} href={href}>
       {children}
