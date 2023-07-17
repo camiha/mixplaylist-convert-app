@@ -5,7 +5,7 @@ import { Logo } from "../logo";
 
 export const Header = () => {
   return (
-    <Box bg="green.primary">
+    <Box as="header" bg="green.primary">
       <Flex alignItems="center" maxWidth="container.lg" mx="auto" px={4} py={2}>
         <Logo level="h2" />
         <Spacer />
