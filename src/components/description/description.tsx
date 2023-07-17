@@ -16,7 +16,7 @@ export const Description = ({ children }: DescriptionProps) => {
       flexDirection="column"
       fontSize="xl"
       fontWeight="normal"
-      gap={2}
+      gap={1}
       position="relative"
     >
       {children}

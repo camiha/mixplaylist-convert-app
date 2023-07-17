@@ -46,7 +46,7 @@ export const Button = ({
       border="solid"
       borderRadius="none"
       borderWidth={2}
-      fontSize="xl"
+      fontSize="2xl"
       fontStyle="italic"
       width={fill ? "100%" : "auto"}
       {...variants[variant]}

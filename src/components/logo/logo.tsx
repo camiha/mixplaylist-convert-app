@@ -13,7 +13,7 @@ export const Logo = ({ level }: LogoProps) => {
       color="black.primary"
       display="inline-flex"
       flexDirection="column"
-      fontSize="0.25rem"
+      fontSize="sm"
       fontStyle="italic"
       fontWeight="normal"
       gap={0.5}

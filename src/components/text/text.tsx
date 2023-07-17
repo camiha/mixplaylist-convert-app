@@ -16,5 +16,9 @@ export type TextProps = {
 };
 
 export const Text = ({ children, valiant }: TextProps) => {
-  return <ChakraText {...valiants[valiant]}>{children}</ChakraText>;
+  return (
+    <ChakraText fontSize="sm" {...valiants[valiant]}>
+      {children}
+    </ChakraText>
+  );
 };

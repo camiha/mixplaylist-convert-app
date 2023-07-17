@@ -31,7 +31,7 @@ export const Marker = ({
   children,
 }: MarkerProps) => {
   return (
-    <ChakraText {...variants[variant]} display="inline-flex" px={px}>
+    <ChakraText {...variants[variant]} as="span" display="inline-flex" px={px}>
       {children}
     </ChakraText>
   );

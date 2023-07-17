@@ -14,11 +14,11 @@ export const Title = ({ level, children }: TitleProps) => {
       color="black.primary"
       display="inline-flex"
       flexDirection="column"
-      fontSize="4xl"
+      fontFamily="fonts.heading"
+      fontSize="2.5rem"
       fontStyle="italic"
       fontWeight="normal"
       gap={2}
-      position="relative"
     >
       {children}
     </ChakraHeading>

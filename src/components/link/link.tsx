@@ -7,12 +7,12 @@ import NextLink from "next/link";
 const variants = {
   primary: {
     color: "black.primary",
-    fontSize: 4,
+    fontSize: "md",
     _hover: { bg: "green.light" },
   },
   secondary: {
     color: "white.primary",
-    fontSize: 4,
+    fontSize: "md",
     _hover: { bg: "green.light" },
   },
   box: {
@@ -22,7 +22,7 @@ const variants = {
     fontStyle: "italic",
     fontWeight: "bold",
     px: 1,
-    fontSize: 6,
+    fontSize: "2xl",
     _hover: { bg: "green.light" },
   },
 };
