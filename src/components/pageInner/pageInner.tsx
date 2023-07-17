@@ -8,7 +8,14 @@ export type PageInnerProps = {
 
 export const PageInner = ({ children }: PageInnerProps) => {
   return (
-    <Box height="full" maxWidth="container.md" mx="auto" px={4} py={16}>
+    <Box
+      height="full"
+      maxWidth="container.md"
+      mx="auto"
+      px={4}
+      py={16}
+      width="full"
+    >
       {children}
     </Box>
   );
