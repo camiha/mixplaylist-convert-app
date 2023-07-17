@@ -1,12 +1,42 @@
+import { ReactNode } from "react";
+
+import { Link as ChakraLink } from "@chakra-ui/react";
 import NextLink from "next/link";
 
-import { LinkInner, LinkInnerProps } from "./linkInner";
+// TODO: add hover color
+const variants = {
+  primary: {
+    color: "black.primary",
+    fontSize: 4,
+    _hover: { bg: "green.light" },
+  },
+  secondary: {
+    color: "white.primary",
+    fontSize: 4,
+    _hover: { bg: "green.light" },
+  },
+  box: {
+    color: "black.primary",
+    borderColor: "yellow.primary",
+    backgroundColor: "yellow.primary",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    px: 1,
+    fontSize: 6,
+    _hover: { bg: "green.light" },
+  },
+};
+export type LinkProps = {
+  children: ReactNode;
+  href: string;
+  nextLink?: typeof NextLink;
+  variant: keyof typeof variants;
+};
 
-export type LinkProps = LinkInnerProps;
 export const Link = ({ children, variant, href }: LinkProps) => {
   return (
-    <LinkInner href={href} nextLink={NextLink} variant={variant}>
+    <ChakraLink as={NextLink} {...variants[variant]} href={href}>
       {children}
-    </LinkInner>
+    </ChakraLink>
   );
 };

@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import { LinkInner } from "./linkInner";
+import { Link } from "./link";
 
-const meta: Meta<typeof LinkInner> = {
+const meta: Meta<typeof Link> = {
   title: "Components / Navigation / Link",
-  component: LinkInner,
+  component: Link,
   tags: ["autodocs"],
   decorators: [
     (Story) => (
@@ -19,7 +19,7 @@ const meta: Meta<typeof LinkInner> = {
 
 export default meta;
 
-type Story = StoryObj<typeof LinkInner>;
+type Story = StoryObj<typeof Link>;
 
 export const Primary: Story = {
   args: {
