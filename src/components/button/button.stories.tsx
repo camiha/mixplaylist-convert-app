@@ -8,7 +8,9 @@ const meta: Meta<typeof Button> = {
   tags: ["autodocs"],
   decorators: [
     (Story) => (
-      <div style={{ backgroundColor: "#ddd", padding: "16px" }}>
+      <div
+        style={{ backgroundColor: "rgba(221, 221, 221, 0.5)", padding: "16px" }}
+      >
         <Story />
       </div>
     ),
