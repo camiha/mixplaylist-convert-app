@@ -20,13 +20,13 @@ const variants = {
     color: "red.primary",
     borderColor: "red.primary",
     backgroundColor: "transparent",
-    _hover: { bg: "green.light" },
+    _hover: { opacity: 0.5 },
   },
   attention: {
     color: "black.primary",
     borderColor: "yellow.primary",
     backgroundColor: "yellow.primary",
-    _hover: { bg: "green.light", borderColor: "green.light" },
+    _hover: { opacity: 0.5 },
   },
 };
 export type ButtonProps = {
