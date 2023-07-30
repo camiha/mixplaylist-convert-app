@@ -17,3 +17,6 @@ export const SPOTIFY_CLIENT_SECRET = process.env
 export const SPOTIFY_REDIRECT_URI = process.env.SPOTIFY_REDIRECT_URI as string;
 export const SPOTIFY_AUTH_STATE_KEY = process.env
   .SPOTIFY_AUTH_STATE_KEY as string;
+
+// Youtube
+export const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY as string;
