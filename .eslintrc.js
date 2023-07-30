@@ -44,6 +44,15 @@ module.exports = {
       },
     ],
     "linebreak-style": ["error", "unix"],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+        destructuredArrayIgnorePattern: "^_",
+      },
+    ],
     "import/no-cycle": "error",
     "import/order": [
       "error",
