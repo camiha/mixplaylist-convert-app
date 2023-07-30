@@ -3,10 +3,10 @@ import { Box, Flex } from "@chakra-ui/react";
 
 import { Description } from "@/components/description";
 import { Footer } from "@/components/footer";
-import { Link } from "@/components/link";
 import { Marker } from "@/components/marker";
 import { PageInner } from "@/components/pageInner";
 import { Title } from "@/components/title";
+import { SpotifyLogin } from "@/features/auth";
 
 export default function Home() {
   return (
@@ -30,9 +30,7 @@ export default function Home() {
                 <Marker variant="greenDark">playing on Spotify.</Marker>
               </Description>
               <Box>
-                <Link href="/convert" variant="box">
-                  {`Login=>`}
-                </Link>
+                <SpotifyLogin />
               </Box>
             </Flex>
           </PageInner>
