@@ -12,11 +12,19 @@ const variants = {
 };
 
 export type InputProps = {
+  value: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   variant: keyof typeof variants;
 };
 
-export const Input = ({ variant }: InputProps) => {
+export const Input = ({ variant, value, onChange }: InputProps) => {
   return (
-    <ChakraInput borderRadius="unset" {...variants[variant]} border="none" />
+    <ChakraInput
+      borderRadius="unset"
+      onChange={onChange}
+      {...variants[variant]}
+      border="none"
+      value={value}
+    />
   );
 };

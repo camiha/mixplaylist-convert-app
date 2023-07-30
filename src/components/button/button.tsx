@@ -34,12 +34,14 @@ export type ButtonProps = {
   fill?: boolean;
   variant?: keyof typeof variants;
   type?: "button" | "submit" | "reset";
+  onClick?: () => void;
 };
 export const Button = ({
   variant = "primary",
   type = "button",
   fill = true,
   children,
+  onClick,
 }: ButtonProps) => {
   return (
     <ChakraButton
@@ -50,6 +52,7 @@ export const Button = ({
       fontStyle="italic"
       width={fill ? "100%" : "auto"}
       {...variants[variant]}
+      onClick={onClick}
       type={type}
     >
       {children}

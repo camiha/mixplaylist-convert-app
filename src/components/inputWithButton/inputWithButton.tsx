@@ -9,10 +9,15 @@ import { Input } from "../input";
 
 // TODO: variant support
 export type InputWithButtonProps = {
-  name: string;
+  value: string;
   onClick: () => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
-export const InputWithButton = ({ onClick }: InputWithButtonProps) => {
+export const InputWithButton = ({
+  onClick,
+  onChange,
+  value,
+}: InputWithButtonProps) => {
   return (
     <Box bg="black.primary">
       <Flex
@@ -26,7 +31,7 @@ export const InputWithButton = ({ onClick }: InputWithButtonProps) => {
           {">"}
         </ChakraText>
         {/* TODO: RHF Setup */}
-        <Input variant="secondary" />
+        <Input onChange={onChange} value={value} variant="secondary" />
         <ChakraButton
           _hover={{ opacity: 0.8 }}
           bg="black.primary"
