@@ -1,3 +1,3 @@
 module.exports = {
-  "*.{ts,tsx}": ["pnpm run lint:fix", "pnpm run format:fix"],
+  "*.{ts,tsx}": ["eslint", "prettier --list-different"],
 };
